@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,
+        th,
+        td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>COLSPAN</caption>
+        <tr>
+            <th>Name</th>
+            <th colspan = 2>Telephone</th>
+        </tr>
+        <tr>
+            <td>Vikas Rawat</td>
+            <td>9125577854</td>
+            <td>6268591793</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>ROWSPAN</caption>
+        <tr>
+            <th>Name</th>
+            <td>Vikas Rawat</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>9125577854</td>
+        </tr>
+        <tr>
+            <td>6363472643</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>CONFUSION MATRIX</caption>
+        <!--6 rows-->
+        <!--4 rows-->
+        <tr>
+            <th colspan="4">ACTUAL VALUE</th>
+        </tr>
+        <tr>
+            <th>
+            <th>
+            <th>POSITIVES</th>
+            <th>NEGATIVES</th>
+        </tr>
+        <tr>
+            <th rowspan="4">Predicted Value</th>
+           <th rowspan = "2">Positives</th>
+           <td>TP</td>
+           <td>FP</td>
+        </tr>
+        <tr>
+           
+            <td>True Positive</td>
+            <td>False Positive</td>
+        </tr>
+        <tr>
+            <th rowspan = "2">Negatives</th>
+            <td>FN</td>
+            <td>TN</td>
+        </tr>
+        <tr>
+            <td>False Negative</td>
+            <td>True Negative</td>
+        </tr>
+    </table>
+</body>
+</html>
